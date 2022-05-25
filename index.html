@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>factura</title>
+</head>
+<body>
+   
+<main>
+   <section class="container">
+       <div class="col">
+           <div class="container-title">
+            <p class="title">Factura</p>
+           </div>
+           <div class="container-subtitle">
+               <h3 class="subtitle">Cabecera de la Factura</h3>
+           </div>
+           <div class="container-form1">
+               <form class="form1" id="formCabecera" action="">
+                       <div class="form-div1">
+                           <div class="label-input">
+                            <label for="nombre">Nombre:</label> <br>
+                            <input class="nombre" type="text" class="form-control"
+                            placeholder="Nombre" id="nombre">
+                            
+                           </div>
+                        <div class="label-input">
+                            <label for="ruc">RUC:</label> <br>
+                            <input type="text" class="form-control"
+                            placeholder="Ejm: 145824" id="ruc">
+                        </div>
+                        <div class="label-input">
+                            <label for="nro">Num:</label> <br>
+                            <input class="num" type="text" class="form-control"
+                            placeholder="001" id="nro">
+                        </div>
+                        
+                       </div>
+                     
+                     <div class="form-div2">
+                         <div class="label-input">
+                            <label for="direccion">Dirección:</label>  <br>
+                            <input class="direccion" type="text" class="form-control"
+                            placeholder="Ejm: Calle Rey Bonkoro" id="direccion">
+                         </div>
+
+                     <div class="label-input">
+                        <label for="fecha">Fecha:</label> <br>
+                        <input class="fecha" type="Date" class="form-control"
+                        placeholder="001" id="fecha">
+                     </div>
+                     </div>
+                    
+               </form>
+           </div>
+       </div>
+   </section> 
+   <section class="row">
+       <div class="col">
+          <div class="card">
+             <div class="csr-body">
+                 <form class="form2" id="formDetalle" action="">
+                        <div class="label-input">
+                         <label for="inputCantidad">Cantidad:</label> <br>
+                         <input class="cantidad" type="number" class="form-control"
+                         placeholder="Cantidad" id="inputCantidad">
+                         
+                        </div>
+                     <div class="label-input">
+                         <label for="selectDescripcion">Descripción:</label> <br>
+                         <select class="descripcion" id="selectDescripcion">
+                             <option value="Seleccione">Seleccione</option>
+                            <!--<option value="USB">USB</option>
+                            <option value="Ratón">Ratón</option>
+                            <option value="Celular">Celular</option>
+                            <option value="Tableta">Tableta</option> --> 
+                         </select>
+                     </div>
+                     <div class="label-input">
+                         <label for="inputPUnitario">P. Unitario:</label> <br>
+                         <input class="p-unitario" type="number" class="form-control"
+                         placeholder="" id="inputPUnitario" disabled >
+                     </div>
+                  
+                      <div class="label-input">
+                         <label for="inputPTotal">P. Total:</label>  <br>
+                         <input class="p-total" type="number" class="form-control"
+                         placeholder="" id="inputPTotal" disabled>
+                         <button class="btn-guardar" class="btn" type="submit">Agregar</button>
+                      </div>
+                  </div>
+                 </form>
+             </div> 
+          </div>
+       </div>
+   </section>
+       <button class="btn-guardar" id="btnGuardar" type="button">Guadar factura</button>
+   <section>
+       <div>
+           <table >
+               <thead class="thead">
+                   <tr>
+                       <th class="cantidad">Cantidad</th>
+                       <th class="descripcion">Descripción</th>
+                       <th class="p-unitario">P. Unitario</th>
+                       <th class="p-total">P. Total</th>
+                       <th class="p-total">Acciones</th>
+                   </tr>
+               </thead>
+               <tbody id="cuerpoTabla">
+                   
+               </tbody>
+           </table>
+       </div>
+   </section>
+</main>
+    <script src="index.js"></script>
+</body>
+</html>

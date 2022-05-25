@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: calibri;
+    
+}
+
+.title {
+    color: rgb(195, 43, 43);
+    font-size: 40px;
+    font-weight: lighter; 
+    margin: 0;
+}
+.container-form1 {
+    height: 130px; 
+    width: 800px;
+    border: 1px solid grey;
+    margin:  0 auto;
+}
+
+.form-div1 {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    font-size: 16px;
+}
+.form-div2 {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    font-size: 16px;
+}
+.label-input {
+    margin: 5px;
+}
+input {
+    height: 20px;
+
+}
+.nombre{
+    width: 350px;
+}
+.direccion {
+    width: 600px;
+}
+.btn-guardar {
+    height: 25px;
+    background: green;
+    border-radius: 5px;
+}
+.form2 {
+    display: flex;
+    justify-content: center;
+    height: 60px; 
+    width: 800px;
+    border: 1px solid grey;
+    margin:  10px;
+}
+select {
+    height: 25px;
+}
+.cantidad {
+    width: 80px;
+    text-align: center;
+}
+.descripcion {
+    width: 400px;
+    text-align: center;
+}
+.p-unitario {
+    width: 100px;
+    text-align: center;
+}
+.p-total {
+   width: 100px;
+   text-align: center;
+   
+}
+.thead {
+    display: flex;
+    justify-content: center;
+    height: 30px; 
+    width: 800px;
+    border: 1px solid grey;
+    margin: 0 10px 0 10px ;
+    text-align: center;
+}
+tbody {
+    display: inline-block;
+    justify-content: center;
+    margin: 0 10px 0 10px ;
+    width: 800px;
+    border: 1px solid black;
+    
+}
+tr {
+    border: 1px solid black;
+    background: #ccc;
+}
+.container-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.btn {
+    background: red;
+    margin-left: 30px;
+    height: 25px;
+}
